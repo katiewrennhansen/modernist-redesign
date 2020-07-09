@@ -1,0 +1,166 @@
+/*
+ * jQuery Nivo Slider v3.2
+ * https://nivo.dev7studios.com
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * https://www.opensource.org/licenses/mit-license.php
+ */
+ 
+/* The Nivo Slider styles */
+#slider {
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	height: 550px;
+}
+.nivoSlider {
+	position: relative;
+	z-index: 3;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.nivoSlider img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	max-width: none;
+}
+.nivo-main-image {
+	display: block !important;
+	position: relative !important; 
+	width: 100% !important;
+}
+/* ---------- Caption styles ---------- */
+.nivo-caption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-family: 'Oswald', helvetica, Helvetica, sans-serif;
+	font-size: 38px;
+	color: #000000; /*caption text color*/
+	letter-spacing: 1px;
+	line-height: 1.3em;
+	text-align: left;
+	width: 100%;
+	z-index: 8;
+	padding: 0;
+	overflow: hidden;
+	display: none;
+	box-sizing: border-box;
+}
+.nivo-caption p {
+	padding: 0; margin: 0;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-caption1 {
+	margin: 5% 46% 0 2%;
+	width: 50%;
+	padding: 5px 1%;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.4);
+	border-radius: 10px;
+}
+.nivo-caption2 {
+	margin: 10% 2% 0 46%;
+	width: 50%;
+	padding: 5px 1%;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.4);
+	border-radius: 10px;
+}
+.nivo-caption3 {
+	margin: 30% 9% 0 9%;
+	width: 80%;
+	padding: 5px 1%;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.4);
+	border-radius: 10px;
+}
+.nivo-html-caption {
+	display:none;
+}
+/* ---------- If an image is wrapped in a link ---------- */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+	background:white; 
+	opacity:0;
+}
+/* ---------- The slices and boxes in the Slider ---------- */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+	top:0;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+	overflow:hidden;
+}
+.nivo-box img {
+	display:block;
+}
+
+/* ===== TO RESIZE SLIDESHOW FOR MOBILE ===== */
+/* ===== SMALL DEVICE 01 ===== */
+@media screen and (max-width: 320px) {
+    #slider {width: 100%; height: auto;}
+    .nivo-caption {font-size: 14px;}
+    .nivo-caption1, .nivo-caption2, .nivo-caption3 {padding: 5px 1%;}
+}
+/* =========================== */
+/* ===== SMALL DEVICE 02 ===== */
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    #slider {width: 100%; height: auto;}
+	.nivo-caption {font-size: 18px;}
+    .nivo-caption1, .nivo-caption2, .nivo-caption3 {padding: 5px 1%;}
+}
+/* =========================== */
+/* ===== SMALL DEVICE 03 ===== */
+@media screen and (min-width: 481px) and (max-width: 623px) {
+    #slider {width: 100%; height: auto;}
+	.nivo-caption {font-size: 20px;}
+    .nivo-caption1, .nivo-caption2, .nivo-caption3 {padding: 5px 1%;}
+}
+/* =========================== */
+/* ===== MID DEVICE 01 ======= */
+@media screen and (min-width: 624px) and (max-width: 669px) {
+    #slider {width: 100%; height: auto;}
+	.nivo-caption {font-size: 24px;}
+}
+/* =========================== */
+/* ===== MID DEVICE 02 ======= */
+@media screen and (min-width: 670px) and (max-width: 768px) {
+    #slider {width: 100%; height: auto;}
+	.nivo-caption {font-size: 26px;}
+}
+/* =========================== */
+/* ===== MID DEVICE 03 ======= */
+@media screen and (min-width: 769px) and (max-width: 800px) {
+    #slider {width: 100%; height: auto;}
+	.nivo-caption {font-size: 28px;}
+}
+/* =========================== */
+/* ===== LARGE DEVICE 01 ===== */
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+    #slider {width: 100%; height: auto;}
+}
+/* =========================== */
+/* ===== LARGE DEVICE 02 ===== */
+@media screen and (min-width: 1025px) and (max-width: 1279px) {
+    #slider {width: 100%; height: auto;}
+}
