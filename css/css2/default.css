@@ -81,15 +81,17 @@ table {padding: 0; border-collapse: collapse; font-size: 100%; width: 100%;}
 
 /* 2. ============= TYPOGRAPHY ============ */
 a {
-	color: #7b88c5;
+	color: rgb(233, 2, 2);
 	text-decoration: underline;
 	outline: none;
 	font-weight: bold;
+	transition: 200ms ease-in-out;
 }
 a:hover {
-	color: #919191;
+	color: rgb(186, 1, 1);
 	text-decoration: underline;
 	font-weight: bold;
+	transition: 200ms ease-in-out;
 }
 h1 {
 	font: 44px 'Poiret One', helvetica, Helvetica, sans-serif;
@@ -444,8 +446,16 @@ hr.noshow {background-color: transparent; border: none; color: #fff; height: 0; 
    margin: 0 auto;
 }
 .inside {
-   width: 96%;
-	padding: 0 2%;
+   width: 80%;
+   padding: 0 2%;
+   margin: 0 auto;
+}
+.inside a {
+	text-decoration: none;
+	border-bottom: 2px solid rgb(233, 2, 2);
+}
+.inside a:hover {
+	border-bottom: 2px solid rgb(186, 1, 1);
 }
 .row1, .row2, .row3 {
 	width: 100%;
@@ -523,8 +533,8 @@ header.homepage {
 /* 12. ======== LOGO/SITE NAME AREA ======== */
 .logo {
 	float: left;
-	width: 40%;
 	margin-left: 2%;
+	width: 300px!important;
 }
 .brand {
 	font: 34px 'Poiret One', helvetica, Helvetica, sans-serif;
@@ -562,8 +572,8 @@ nav {
 ul.slimmenu {list-style-type: none; margin: 10px 0 0 0; padding: 0; width: 100%; text-align: right; font-size: 12px;}
 ul.slimmenu li {}
 ul.slimmenu > li {margin-right: -4px;}
-ul.slimmenu li a {letter-spacing: 1px; color: #fff; font-size: 12px; font-weight: normal; padding: 12px 25px 12px 25px;}
-ul.slimmenu li a:hover {color: #ced4ea; text-decoration: none;}
+ul.slimmenu li a {letter-spacing: 1px; color: #fff; font-size: 12px; font-weight: normal; padding: 12px 16px;}
+ul.slimmenu li a:hover {color: #e4e4e4; text-decoration: none;}
 
 /* === NON-MOBILE SUB LEVELS === */
 ul.slimmenu li ul li {width: 150px; background-color: rgb(233, 2, 2); text-align: left;}
@@ -573,22 +583,21 @@ ul.slimmenu li ul li ul li {text-align: left;}
 
 /* === FOR MOBILE === */
 .menu-collapser {border-radius: 0; color: #fff;}
-.collapse-button {background-color: #555; box-shadow: 0 0 8px #000 inset; border: 1px solid red;}
-.collapse-button:hover, .collapse-button:focus {background-color: red; box-shadow: 0 0 8px #435299 inset;}
+.collapse-button {background-color: #000; height: 65px;}
 
 /* === MOBILE TOP LEVEL === */
-ul.slimmenu.collapsed li {background: #000;}
+ul.slimmenu.collapsed li {background-color: rgb(233, 2, 2);}
 ul.slimmenu.collapsed li a {color: #ffffff;}
-ul.slimmenu.collapsed li a:hover {background-color: #7b88c5; color: #ffffff; border-radius: 0; text-decoration: none;}
+ul.slimmenu.collapsed li a:hover {background-color: rgb(186, 1, 1); color: #ffffff; border-radius: 0; text-decoration: none;}
 ul.slimmenu.collapsed li .sub-collapser > i {color: #ced4ea; /* arrow color */}
 
 /* === MOBILE SUB LEVELS === */
 ul.slimmenu.collapsed li ul li {background: rgba(255, 255, 255, 0.20);}
 ul.slimmenu.collapsed li ul li a {color: #ffffff; padding: 12px 15px 12px 15px;}
-ul.slimmenu.collapsed li ul li a:hover {background-color: #7b88c5; color: #ffffff;}
+ul.slimmenu.collapsed li ul li a:hover {background-color: rgb(186, 1, 1); color: #ffffff;}
 ul.slimmenu.collapsed li ul li ul li {background: rgba(255, 255, 255, 0.05);}
 ul.slimmenu.collapsed li ul li ul li a {color: #ffffff;}
-ul.slimmenu.collapsed li ul li ul li a:hover {background-color: #7b88c5; color: #ffffff;}
+ul.slimmenu.collapsed li ul li ul li a:hover {background-color: rgb(186, 1, 1); color: #ffffff;}
 
 /* === stuff you won't need to edit === */
 ul.slimmenu li {position: relative; display: inline-block; text-align: center;}
@@ -602,11 +611,11 @@ ul.slimmenu li > ul > li ul {display: none; position: absolute; left: 100%; top:
 ul.slimmenu li a {display: block; font-family: 'Open Sans', sans-serif; transition: background-color 0.2s ease-out;}
 ul.slimmenu li ul li a:hover {text-decoration: none;}
 
-.menu-collapser {width: 96%; margin: 0 2%; position: relative; text-align: left; height: 48px; line-height: 48px; padding: 0 8px; 	box-sizing: border-box;}
-.collapse-button {position: absolute; right: 8px; top: 50%; width: 40px; background-repeat: repeat-x; border-radius: 4px; color: #ffffff; padding: 7px 10px;
+.menu-collapser {color: #000; width: 96%; margin: 0 2%; position: relative; text-align: left; height: 48px; line-height: 48px; padding: 0 8px; 	box-sizing: border-box;}
+.collapse-button {position: absolute; right: 30px; width: 40px; background-repeat: repeat-x; color: #ffffff; padding: 7px 10px;
 	cursor: pointer; font-size: 14px; text-align: center; transform: translate(0, -50%); box-sizing: border-box;}
-.collapse-button .icon-bar {background-color: #ffffff; box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); border-radius: 1px 1px 1px 1px; display: block; height: 2px;
-	width: 18px; margin: 2px 0;}
+.collapse-button .icon-bar {background-color: #ffffff; box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); border-radius: 1px 1px 1px 1px; display: block; height: 3px;
+	width: 26px; margin: 5px 0;}
 ul.slimmenu.collapsed {list-style-type: none; margin: 0 1%; padding: 0; width: 98%; text-align: left;}
 ul.slimmenu.collapsed li {border-left: none; display: block; width: 100%; box-sizing: border-box; z-index: 999; text-align: left;}
 ul.slimmenu.collapsed li .sub-collapser {position: absolute; right: 0; top: 10px; width: 40px; height: 48px; text-align: center; z-index: 999; cursor: pointer; visibility: visible;}
@@ -923,11 +932,11 @@ ul#ticker {list-style: none outside none; margin: 0; padding: 10px 0 10px 0;}
    .container {width: 98%; margin: 0 auto; box-sizing: border-box;}
    .photoblockcontainer {width: 98%; margin: -140px auto 10px auto;}
    .photoblock .caption {font-size: 18px;}
-   .logo {width: 100%; float: none; text-align: center; box-sizing: border-box;}
-   .brand {font-size: 28px; text-align: center;}
+   .logo {width: 100%; text-align: center; box-sizing: border-box;}
+   .brand {font-size: 28px; text-align: center; width: 250px;}
    .slogan {padding-left: 0; text-align: center;}
    nav {width: 100%; float: none; text-align: center; box-sizing: border-box;}
-   .menu-collapser {width: 300px; margin: 0 auto;}
+   .menu-collapser {margin: 0 auto; position: absolute; color: rgba(0, 0, 0, 0);}
    ul.slimmenu.collapsed {width: 300px; margin: 0 auto;}
    blockquote.leftside, blockquote.rightside {visibility: hidden; display: none;}
    .contentBox2a, .contentBox2b, 
@@ -943,11 +952,11 @@ ul#ticker {list-style: none outside none; margin: 0; padding: 10px 0 10px 0;}
    .container {width: 98%; margin: 0 auto; box-sizing: border-box;}
    .photoblockcontainer {width: 98%; margin: -140px auto 10px auto;}
    .photoblock .caption {font-size: 22px;}
-   .logo {width: 100%; float: none; text-align: center; box-sizing: border-box;}
+   .logo {width: 100%; text-align: center; box-sizing: border-box;}
    .brand {font-size: 28px; text-align: center;}
    .slogan {padding-left: 0; text-align: center;}
    nav {width: 100%; float: none; text-align: center; box-sizing: border-box;}
-   .menu-collapser {width: 300px; margin: 0 auto;}
+   .menu-collapser { margin: 0 auto;}
    ul.slimmenu.collapsed {width: 300px; margin: 0 auto;}
    blockquote.leftside, blockquote.rightside {visibility: hidden; display: none;}
    .contentBox2a, .contentBox2b, 
@@ -962,11 +971,11 @@ ul#ticker {list-style: none outside none; margin: 0; padding: 10px 0 10px 0;}
 @media screen and (min-width: 624px) and (max-width: 669px) {
    .container {width: 98%; margin: 0 auto; box-sizing: border-box;}
    .photoblockcontainer {width: 98%; margin: -120px auto 10px auto;}
-   .logo {width: 100%; float: none; text-align: center; box-sizing: border-box;}
+   .logo {width: 100%; text-align: center; box-sizing: border-box;}
    .brand {font-size: 32px; text-align: center;}
    .slogan {padding-left: 0; text-align: center;}
    nav {width: 100%; float: none; text-align: center; box-sizing: border-box;}
-   .menu-collapser {width: 300px; margin: 0 auto;}
+   .menu-collapser {margin: 0 auto;}
    ul.slimmenu.collapsed {width: 300px; margin: 0 auto;}
    blockquote.leftside, blockquote.rightside {visibility: hidden; display: none;}
    .contentBox2a, .contentBox2b, 
@@ -983,7 +992,7 @@ ul#ticker {list-style: none outside none; margin: 0; padding: 10px 0 10px 0;}
    .photoblockcontainer {width: 98%; margin: -160px auto 10px auto;}
    .logo {width: 40%;}
    .brand {font-size: 30px;}
-   nav {width: 55%;}
+   nav {width: 100%;}
    .menu-collapser {width: 300px; margin: 0 0 0 auto;}
    ul.slimmenu.collapsed {width: 300px; margin: 0 0 0 auto;}
    blockquote.leftside, blockquote.rightside {visibility: hidden; display: none;}
@@ -999,7 +1008,7 @@ ul#ticker {list-style: none outside none; margin: 0; padding: 10px 0 10px 0;}
    .photoblockcontainer {width: 98%;}
    .logo {width: 40%;}
    .brand {font-size: 30px;}
-   nav {width: 55%;}
+   nav {width: 100%;}
    .menu-collapser {width: 300px; margin: 0 0 0 auto;}
    ul.slimmenu.collapsed {width: 300px; margin: 0 0 0 auto;}
    blockquote.leftside, blockquote.rightside {visibility: hidden; display: none;}
@@ -1014,7 +1023,7 @@ ul#ticker {list-style: none outside none; margin: 0; padding: 10px 0 10px 0;}
    .container {width: 98%;	margin: 0 auto;}
    .photoblockcontainer {width: 98%;}
    .menu-collapser {width: 300px; margin: 0 0 0 auto;	padding: 0;}
-   ul.slimmenu.collapsed {width: 300px; margin: 0 0 0 auto;}
+   ul.slimmenu.collapsed {width: 300px; margin: 10px 0 0 auto;}
 }
 
 /* ===== LARGE DEVICE 02 ===== */
