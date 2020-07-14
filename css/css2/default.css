@@ -127,10 +127,6 @@ table {
 }
 
 
- table.icon-table td {
-	text-align: center;
-}
-
 /* 2. ============= TYPOGRAPHY ============ */
 
 a {
@@ -148,9 +144,33 @@ a:hover {
 	transition: 200ms ease-in-out;
 }
 
+a.hover-border {
+	position: relative;
+	color: rgb(233, 2, 2);
+	text-decoration: none;
+}
+
+a.hover-border::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: rgb(186, 1, 1);
+	visibility: hidden;
+	transform: scaleX(0);
+	transition: all 0.3s ease-in-out 0s;
+}
+
+a.hover-border:hover::before {
+	visibility: visible;
+	transform: scaleX(1);
+}
+
 h1 {
 	font: 44px 'Poiret One', helvetica, Helvetica, sans-serif;
-	color: #435299;
+	color: #222;
 	margin: 0.3em 0;
 	text-align: left;
 }
@@ -158,7 +178,7 @@ h1 {
 h2 {
 	font: 36px 'Oswald', helvetica, Helvetica, sans-serif;
 	color: #222;
-	margin: 20px 0 10px;
+	margin: 20px 0;
 	text-transform: uppercase;
 	font-weight: bold;
 }
@@ -175,7 +195,7 @@ h3 {
 
 h4 {
 	font: 24px 'Oswald', helvetica, Helvetica, sans-serif;
-	color: #435299;
+	color: #333333;
 	margin: 0.3em 0;
 	position: relative;
 	text-align: left;
@@ -1438,7 +1458,7 @@ footer h5 {
 footer .inside {
 	width: 90%;
 	text-align: center;
-	padding-top: 30px;
+	padding: 30px 0 0;
 	border-top: 2px solid #333;
 }
 
@@ -2424,7 +2444,8 @@ ul#ticker {
 }
 
 
-
-.text-left {
-	text-align: left;
+.border-top {
+	border-top: 2px solid #333;
+	margin-top: 40px;
+	padding-top: 10px;
 }
