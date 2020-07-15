@@ -1,5 +1,5 @@
 /* Design by RTBWizards.com
- * Colors Used: #435299 (dark), #7b88c5 (medium), #ced4ea (light)
+ * Colors Used: rgb(233, 2, 2) (dark), #7b88c5 (medium), #ced4ea (light)
  *
   1. General Rules
   2. Typography
@@ -113,7 +113,7 @@ fieldset {
 }
 
 legend {
-	color: #435299;
+	color: rgb(233, 2, 2);
 	font: 30px 'Oswald', helvetica, Helvetica, sans-serif;
 	padding: 0 10px;
 }
@@ -155,7 +155,7 @@ a.hover-border::before {
 	position: absolute;
 	width: 100%;
 	height: 2px;
-	bottom: 0;
+	bottom: -4px;
 	left: 0;
 	background-color: rgb(186, 1, 1);
 	visibility: hidden;
@@ -226,7 +226,7 @@ hr {
 
 .alternate1 {
 	font: 32px 'Oswald', helvetica, Helvetica, sans-serif;
-	color: #435299;
+	color: rgb(233, 2, 2);
 	margin: 0.3em 0;
 	text-align: center;
 	position: relative;
@@ -519,7 +519,7 @@ hr.noshow {
 /* 7. =========== MISCELLANEOUS =========== */
 
 .color1 {
-	color: #435299;
+	color: rgb(233, 2, 2);
 }
 
 .color2 {
@@ -563,7 +563,7 @@ hr.noshow {
 }
 
 .dropcap:first-letter {
-	color: #435299;
+	color: rgb(233, 2, 2);
 	display: block;
 	float: left;
 	font: 50px/48px Georgia, Garamond, serif;
@@ -571,8 +571,8 @@ hr.noshow {
 }
 
 .bignumber {
-	color: #435299;
-	border: 1px solid #435299;
+	color: rgb(233, 2, 2);
+	border: 1px solid rgb(233, 2, 2);
 	display: block;
 	float: left;
 	font: normal 30px/50px Garamond, Georgia, serif;
@@ -725,8 +725,8 @@ hr.noshow {
 
 .btn-color {
 	background-color: #7b88c5;
-	background: linear-gradient(#7b88c5, #435299);
-	border-color: #435299;
+	background: linear-gradient(#7b88c5, rgb(233, 2, 2));
+	border-color: rgb(233, 2, 2);
 	color: #fff;
 	font-weight: normal;
 	text-decoration: none;
@@ -744,8 +744,8 @@ hr.noshow {
 .btn-cart {
 	position: relative;
 	background-color: #7b88c5;
-	background: linear-gradient(#7b88c5, #435299);
-	border-color: #435299;
+	background: linear-gradient(#7b88c5, rgb(233, 2, 2));
+	border-color: rgb(233, 2, 2);
 	color: #fff;
 	font-weight: normal;
 	text-decoration: none;
@@ -780,10 +780,10 @@ hr.noshow {
 	width: 120px;
 	height: 120px;
 	color: #ffffff;
-	background-color: #435299;
+	background-color: rgb(233, 2, 2);
 	border-radius: 50%;
 	line-height: 120px;
-	box-shadow: 0 0 0 4px #435299 inset, 0 0 0 5px rgba(255, 255, 255, 0.5) inset;
+	box-shadow: 0 0 0 4px rgb(233, 2, 2) inset, 0 0 0 5px rgba(255, 255, 255, 0.5) inset;
 }
 
 
@@ -802,11 +802,6 @@ hr.noshow {
 
 .inside a {
 	text-decoration: none;
-	/* border-bottom: 2px solid rgb(233, 2, 2); */
-}
-
-.inside a:hover {
-	/* border-bottom: 2px solid rgb(186, 1, 1); */
 }
 
 .row1,
@@ -929,6 +924,18 @@ header.homepage {
 	padding-left: 40px;
 }
 
+.logo-subtext {
+	color: #fff;
+	font-size: 14px;
+	text-align: left;
+	padding-left: 0;
+	margin-top: -26px;
+	text-transform: uppercase;
+	padding: 0 0 0 60px!important;
+	font-size: 12px!important;
+	letter-spacing: 1.2px;
+}
+
 
 /* 13. ======== MAIN NAVIGATION AREA ======== */
 
@@ -943,15 +950,6 @@ nav {
 	text-transform: uppercase;
 }
 
-.auto-style3 {
-	margin-top: -12px;
-	text-transform: uppercase;
-	padding: 0 0 0 60px!important;
-	font-size: 12px!important;
-	letter-spacing: 1.2px;
-}
-
-
 /* === NON-MOBILE TOP LEVEL === */
 
 ul.slimmenu {
@@ -962,8 +960,6 @@ ul.slimmenu {
 	text-align: right;
 	font-size: 12px;
 }
-
-ul.slimmenu li {}
 
 ul.slimmenu>li {
 	margin-right: -4px;
@@ -1006,7 +1002,6 @@ ul.slimmenu li ul li a:hover {
 ul.slimmenu li ul li ul li {
 	text-align: left;
 }
-
 
 /* === FOR MOBILE === */
 
@@ -1311,6 +1306,10 @@ ul.slimmenu.collapsed li ul li ul li a {
 	margin: 0 1% 0 0;
 }
 
+.contentBox4a a {
+	margin: 0 5px;
+}
+
 .contentBox4a img {
 	width: 55px!important;
 	height: 55px!important;
@@ -1366,7 +1365,7 @@ ul.slimmenu.collapsed li ul li ul li a {
 	margin: 10px 0;
 	background-color: #7b88c5;
 	color: #ffffff;
-	box-shadow: inset 0 0 50px #435299, 0 10px 20px -10px rgba(0, 0, 0, 0.5);
+	box-shadow: inset 0 0 50px rgb(233, 2, 2), 0 10px 20px -10px rgba(0, 0, 0, 0.5);
 	border-radius: 8px;
 	text-align: center;
 }
@@ -1496,8 +1495,11 @@ footer .phone:before {
 	margin: 0 30px 30px 0;
 }
 
-.footerbottom br {
-	display: none;
+.footerbottom img {
+	float: left;
+	margin-right: 20px;
+	height: 50px;
+	width: 50px;
 }
 
 .copyright {
@@ -1584,8 +1586,8 @@ form.contactform {
 	text-decoration: none;
 	color: #fff;
 	background-color: #7b88c5;
-	background: linear-gradient(#7b88c5, #435299);
-	border: solid 1px #435299;
+	background: linear-gradient(#7b88c5, rgb(233, 2, 2));
+	border: solid 1px rgb(233, 2, 2);
 	border-radius: 5px;
 }
 
@@ -1884,7 +1886,7 @@ ul#ticker {
 	font-size: 22px;
 	line-height: 1;
 	opacity: .75;
-	color: #435299;
+	color: rgb(233, 2, 2);
 }
 
 .slick-prev {
@@ -1971,7 +1973,7 @@ ul#ticker {
 
 .slick-dots li.slick-active button:before {
 	opacity: 1.0;
-	color: #435299;
+	color: rgb(233, 2, 2);
 }
 
 
@@ -1985,7 +1987,6 @@ ul#ticker {
 
 @media screen and (max-width: 320px) {
 	.container {
-		width: 98%;
 		margin: 0 auto;
 		box-sizing: border-box;
 	}
@@ -2060,7 +2061,6 @@ ul#ticker {
 
 @media screen and (min-width: 321px) and (max-width: 480px) {
 	.container {
-		width: 98%;
 		margin: 0 auto;
 		box-sizing: border-box;
 	}
@@ -2098,7 +2098,7 @@ ul#ticker {
 	}
 	ul.slimmenu.collapsed {
 		width: 300px;
-		margin: 0 auto;
+		margin: 70px auto 0;
 	}
 	blockquote.leftside,
 	blockquote.rightside {
@@ -2137,7 +2137,6 @@ ul#ticker {
 
 @media screen and (min-width: 481px) and (max-width: 623px) {
 	.container {
-		width: 98%;
 		margin: 0 auto;
 		box-sizing: border-box;
 	}
@@ -2211,7 +2210,6 @@ ul#ticker {
 
 @media screen and (min-width: 624px) and (max-width: 669px) {
 	.container {
-		width: 98%;
 		margin: 0 auto;
 		box-sizing: border-box;
 	}
@@ -2243,7 +2241,7 @@ ul#ticker {
 	}
 	ul.slimmenu.collapsed {
 		width: 300px;
-		margin: 0 auto;
+		margin: 0 0 0 auto;
 	}
 	blockquote.leftside,
 	blockquote.rightside {
@@ -2286,7 +2284,6 @@ ul#ticker {
 
 @media screen and (min-width: 670px) and (max-width: 768px) {
 	.container {
-		width: 98%;
 		margin: 0 auto;
 		box-sizing: border-box;
 	}
@@ -2350,7 +2347,6 @@ ul#ticker {
 
 @media screen and (min-width: 769px) and (max-width: 800px) {
 	.container {
-		width: 98%;
 		margin: 0 auto;
 		box-sizing: border-box;
 	}
@@ -2413,7 +2409,6 @@ ul#ticker {
 
 @media screen and (min-width: 801px) and (max-width: 1024px) {
 	.container {
-		width: 98%;
 		margin: 0 auto;
 	}
 	.photoblockcontainer {
@@ -2435,7 +2430,6 @@ ul#ticker {
 
 @media screen and (min-width: 1025px) and (max-width: 1279px) {
 	.container {
-		/* width: 98%; */
 		margin: 0 auto;
 	}
 	.photoblockcontainer {
@@ -2448,4 +2442,8 @@ ul#ticker {
 	border-top: 2px solid #333;
 	margin-top: 40px;
 	padding-top: 10px;
+}
+
+.campaign {
+	font-weight: bold;
 }
