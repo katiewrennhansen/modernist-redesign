@@ -982,7 +982,7 @@ ul.slimmenu li a:hover {
 /* === NON-MOBILE SUB LEVELS === */
 
 ul.slimmenu li ul li {
-	width: 150px;
+	width: 140px;
 	background-color: rgb(233, 2, 2);
 	text-align: left;
 }
@@ -1107,7 +1107,7 @@ ul.slimmenu li .sub-collapser {
 ul.slimmenu li>ul {
 	display: none;
 	position: absolute;
-	left: 0;
+	left: -14px;
 	top: 100%;
 	z-index: 999;
 	padding-left: 0;
@@ -1306,15 +1306,6 @@ ul.slimmenu.collapsed li ul li ul li a {
 	margin: 0 1% 0 0;
 }
 
-.contentBox4a a {
-	margin: 0 5px;
-}
-
-.contentBox4a img {
-	width: 55px!important;
-	height: 55px!important;
-}
-
 .contentBox4b,
 .contentBox4c {
 	float: left;
@@ -1395,16 +1386,17 @@ ul.slimmenu.collapsed li ul li ul li a {
 /* 15. ======== FOOTER AREA ======== */
 
 footer {
-	width: 100%;
+	width: 80%;
 	color: #222;
 	font-size: 0.90em;
 	line-height: 1.4em;
 	padding: 10px 0 0 0;
-	margin: 50px 0 0 0;
+	margin: 50px auto 0;
 }
 
 footer a {
 	color: rgb(233, 2, 2);
+	margin: 0 6px 0 0;
 }
 
 footer a:hover {
@@ -1448,17 +1440,16 @@ footer ul li a:hover {
 
 footer h5 {
 	color: #222;
-	text-align: center;
-	font: 22px 'Oswald', helvetica, Helvetica, sans-serif;
+	font: 18px 'Oswald', helvetica, Helvetica, sans-serif;
 	text-transform: uppercase;
 	font-weight: bold;
 }
 
 footer .inside {
-	width: 90%;
-	text-align: center;
+	width: 100%;
 	padding: 30px 0 0;
 	border-top: 2px solid #333;
+	font-size: 12px;
 }
 
 footer .comment:before,
@@ -1468,8 +1459,6 @@ footer .email:before,
 footer .phone:before {
 	color: #555;
 }
-
-
 
 .footerbottom {
 	margin-top: 30px;
@@ -2020,6 +2009,9 @@ ul#ticker {
 		text-align: center;
 		box-sizing: border-box;
 	}
+	ul.slimmenu li>ul {
+		left: 0;
+	}
 	fieldset img {
 		max-width: 180px;
 		height: auto;
@@ -2098,7 +2090,10 @@ ul#ticker {
 	}
 	ul.slimmenu.collapsed {
 		width: 300px;
-		margin: 70px auto 0;
+		margin: 71px 10px 0 auto;
+	}
+	ul.slimmenu li>ul {
+		left: 0;
 	}
 	blockquote.leftside,
 	blockquote.rightside {
@@ -2171,7 +2166,10 @@ ul#ticker {
 	}
 	ul.slimmenu.collapsed {
 		width: 300px;
-		margin: 0 auto;
+		margin: 20px 10px 0 auto;
+	}
+	ul.slimmenu li>ul {
+		left: 0;
 	}
 	blockquote.leftside,
 	blockquote.rightside {
@@ -2241,7 +2239,10 @@ ul#ticker {
 	}
 	ul.slimmenu.collapsed {
 		width: 300px;
-		margin: 0 0 0 auto;
+		margin: 20px 10px 0 auto;
+	}
+	ul.slimmenu li>ul {
+		left: 0;
 	}
 	blockquote.leftside,
 	blockquote.rightside {
@@ -2306,7 +2307,10 @@ ul#ticker {
 	}
 	ul.slimmenu.collapsed {
 		width: 300px;
-		margin: 0 0 0 auto;
+		margin: 20px 10px 0 auto;
+	}
+	ul.slimmenu li>ul {
+		left: 0;
 	}
 	blockquote.leftside,
 	blockquote.rightside {
@@ -2368,7 +2372,10 @@ ul#ticker {
 	}
 	ul.slimmenu.collapsed {
 		width: 300px;
-		margin: 0 0 0 auto;
+		margin: 20px 10px 0 auto;
+	}
+	ul.slimmenu li>ul {
+		left: 0;
 	}
 	blockquote.leftside,
 	blockquote.rightside {
@@ -2421,7 +2428,10 @@ ul#ticker {
 	}
 	ul.slimmenu.collapsed {
 		width: 300px;
-		margin: 10px 0 0 auto;
+		margin: 20px 0 0 auto;
+	}
+	ul.slimmenu li>ul {
+		left: 0;
 	}
 }
 
@@ -2438,6 +2448,7 @@ ul#ticker {
 }
 
 
+/* 2020 Added Styles - Katie Hansen  */
 .border-top {
 	border-top: 2px solid #333;
 	margin-top: 40px;
@@ -2446,4 +2457,26 @@ ul#ticker {
 
 .campaign {
 	font-weight: bold;
+}
+
+@media (max-width: 1076px){
+	iframe {
+		width: 600px;
+		height: 400px;
+	}
+	#juicebox-container {
+		height: 400px!important;
+	}
+}
+@media (max-width: 750px){
+	iframe {
+		width: 400px;
+		height: 250px;
+	}
+}
+@media (max-width: 500px){
+	iframe {
+		width: 300px;
+		height: 200px;
+	}
 }
