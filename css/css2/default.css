@@ -144,35 +144,13 @@ a:hover {
 	transition: 200ms ease-in-out;
 }
 
-a.hover-border {
-	position: relative;
-	color: rgb(233, 2, 2);
-	text-decoration: none;
-}
-
-a.hover-border::before {
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 2px;
-	bottom: -4px;
-	left: 0;
-	background-color: rgb(186, 1, 1);
-	visibility: hidden;
-	transform: scaleX(0);
-	transition: all 0.3s ease-in-out 0s;
-}
-
-a.hover-border:hover::before {
-	visibility: visible;
-	transform: scaleX(1);
-}
-
 h1 {
-	font: 44px 'Poiret One', helvetica, Helvetica, sans-serif;
+	font: 44px 'Oswald', helvetica, Helvetica, sans-serif;
 	color: #222;
 	margin: 0.3em 0;
+	text-transform: uppercase;
 	text-align: left;
+	font-weight: bold;
 }
 
 h2 {
@@ -918,6 +896,10 @@ header.homepage {
 	font-weight: normal;
 }
 
+.brand img {
+	max-width: 300px;
+}
+
 .slogan {
 	color: #fff;
 	font-size: 14px;
@@ -1008,11 +990,6 @@ ul.slimmenu li ul li ul li {
 .menu-collapser {
 	border-radius: 0;
 	color: #fff;
-}
-
-.collapse-button {
-	background-color: #000;
-	height: 65px;
 }
 
 
@@ -1150,7 +1127,9 @@ ul.slimmenu li ul li a:hover {
 .collapse-button {
 	position: absolute;
 	right: 30px;
+	top: 45px;
 	width: 40px;
+	height: 65px;
 	background-repeat: repeat-x;
 	color: #ffffff;
 	padding: 7px 10px;
@@ -1159,6 +1138,8 @@ ul.slimmenu li ul li a:hover {
 	text-align: center;
 	transform: translate(0, -50%);
 	box-sizing: border-box;
+	background-color: #000;
+	
 }
 
 .collapse-button .icon-bar {
@@ -1386,7 +1367,7 @@ ul.slimmenu.collapsed li ul li ul li a {
 /* 15. ======== FOOTER AREA ======== */
 
 footer {
-	width: 80%;
+	width: 100%;
 	color: #222;
 	font-size: 0.90em;
 	line-height: 1.4em;
@@ -1446,7 +1427,6 @@ footer h5 {
 }
 
 footer .inside {
-	width: 100%;
 	padding: 30px 0 0;
 	border-top: 2px solid #333;
 	font-size: 12px;
@@ -1461,9 +1441,10 @@ footer .phone:before {
 }
 
 .footerbottom {
+	background: #000;
 	margin-top: 30px;
-	border-top: 2px solid #333;
-	padding: 30px 0 40px;
+	padding: 30px 60px 40px;
+	color: #fff;
 }
 
 .footerbottom h1 {
@@ -1478,17 +1459,17 @@ footer .phone:before {
 	font-size: 10px;
 }
 
-.footerbottom .auto-style5 img {
-	width: 70px;
-	height: 65px;
+.footerbottom img {
+	width: 50px;
+	height: 50px;
 	margin: 0 30px 30px 0;
+	border-radius: 50%;
 }
 
-.footerbottom img {
+.footerbottom-link {
 	float: left;
-	margin-right: 20px;
 	height: 50px;
-	width: 50px;
+	margin: 0;
 }
 
 .copyright {
@@ -1974,11 +1955,7 @@ ul#ticker {
 
 /* ===== SMALL DEVICE 01 ========= */
 
-@media screen and (max-width: 320px) {
-	.container {
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
+@media (max-width: 480px) {
 	.photoblockcontainer {
 		width: 98%;
 		margin: -120px auto 10px auto;
@@ -1989,102 +1966,37 @@ ul#ticker {
 	.slick-dots li {
 		display: none;
 	}
-	.logo {
-		width: 100%;
-		float: none;
-		text-align: center;
-		box-sizing: border-box;
-	}
-	.brand {
-		font-size: 28px;
-		text-align: center;
-	}
-	.slogan {
-		padding-left: 0;
-		text-align: center;
-	}
-	nav {
-		width: 100%;
-		float: none;
-		text-align: center;
-		box-sizing: border-box;
-	}
-	ul.slimmenu li>ul {
-		left: 0;
-	}
 	fieldset img {
 		max-width: 180px;
 		height: auto;
 	}
-	blockquote.leftside,
-	blockquote.rightside {
-		visibility: hidden;
-		display: none;
-	}
-	.contentBox2a,
-	.contentBox2b,
-	.contentBox3a,
-	.contentBox3b,
-	.contentBox3c,
-	.contentBox4a,
-	.contentBox4b,
-	.contentBox4c,
-	.contentBox4d {
+	ul.slimmenu.collapsed {
 		width: 98%;
-		margin: 1%;
-		padding: 0;
+		margin: 24px 0 0 auto;
 	}
-	.sidebarLeft,
-	.sidebarRight {
-		width: 98%;
-		margin: 1%;
-		padding: 0;
+	.collapse-button {
+		top: 32px;
+		right: 10px;
 	}
-	.contentRight,
-	.contentLeft {
-		width: 98%;
-		margin: 1%;
-		padding: 0;
+	.brand img {
+		width: 200px;
+		height: 50px;
 	}
 }
 
 
 /* ===== SMALL DEVICE 02 ===== */
 
-@media screen and (min-width: 321px) and (max-width: 480px) {
-	.container {
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-	.photoblockcontainer {
-		width: 98%;
-		margin: -140px auto 10px auto;
-	}
+@media (max-width: 480px) {
 	.photoblock .caption {
 		font-size: 18px;
-	}
-	.logo {
-		width: 100%;
-		text-align: center;
-		box-sizing: border-box;
 	}
 	.brand {
 		font-size: 28px;
 		text-align: center;
 		width: 250px;
 	}
-	.slogan {
-		padding-left: 0;
-		text-align: center;
-	}
-	nav {
-		width: 100%;
-		float: none;
-		text-align: center;
-		box-sizing: border-box;
-	}
 	.menu-collapser {
-		margin: 0 auto;
 		position: absolute;
 		color: rgba(0, 0, 0, 0);
 	}
@@ -2092,49 +2004,12 @@ ul#ticker {
 		width: 300px;
 		margin: 71px 10px 0 auto;
 	}
-	ul.slimmenu li>ul {
-		left: 0;
-	}
-	blockquote.leftside,
-	blockquote.rightside {
-		visibility: hidden;
-		display: none;
-	}
-	.contentBox2a,
-	.contentBox2b,
-	.contentBox3a,
-	.contentBox3b,
-	.contentBox3c,
-	.contentBox4a,
-	.contentBox4b,
-	.contentBox4c,
-	.contentBox4d {
-		width: 98%;
-		margin: 1%;
-		padding: 0;
-	}
-	.sidebarLeft,
-	.sidebarRight {
-		width: 98%;
-		margin: 1%;
-		padding: 0;
-	}
-	.contentRight,
-	.contentLeft {
-		width: 98%;
-		margin: 1%;
-		padding: 0;
-	}
 }
 
 
 /* ===== SMALL DEVICE 03 ===== */
 
-@media screen and (min-width: 481px) and (max-width: 623px) {
-	.container {
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
+@media (max-width: 623px) {
 	.photoblockcontainer {
 		width: 98%;
 		margin: -140px auto 10px auto;
@@ -2142,75 +2017,16 @@ ul#ticker {
 	.photoblock .caption {
 		font-size: 22px;
 	}
-	.logo {
-		width: 100%;
-		text-align: center;
-		box-sizing: border-box;
-	}
 	.brand {
 		font-size: 28px;
 		text-align: center;
-	}
-	.slogan {
-		padding-left: 0;
-		text-align: center;
-	}
-	nav {
-		width: 100%;
-		float: none;
-		text-align: center;
-		box-sizing: border-box;
-	}
-	.menu-collapser {
-		margin: 0 auto;
-	}
-	ul.slimmenu.collapsed {
-		width: 300px;
-		margin: 20px 10px 0 auto;
-	}
-	ul.slimmenu li>ul {
-		left: 0;
-	}
-	blockquote.leftside,
-	blockquote.rightside {
-		visibility: hidden;
-		display: none;
-	}
-	.contentBox2a,
-	.contentBox2b,
-	.contentBox3a,
-	.contentBox3b,
-	.contentBox3c,
-	.contentBox4a,
-	.contentBox4b,
-	.contentBox4c,
-	.contentBox4d {
-		width: 98%;
-		margin: 1%;
-		padding: 0;
-	}
-	.sidebarLeft,
-	.sidebarRight {
-		width: 98%;
-		margin: 1%;
-		padding: 0;
-	}
-	.contentRight,
-	.contentLeft {
-		width: 98%;
-		margin: 1%;
-		padding: 0;
 	}
 }
 
 
 /* ===== MID DEVICE 01 ======= */
 
-@media screen and (min-width: 624px) and (max-width: 669px) {
-	.container {
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
+@media (max-width: 669px) {
 	.photoblockcontainer {
 		width: 98%;
 		margin: -120px auto 10px auto;
@@ -2237,125 +2053,30 @@ ul#ticker {
 	.menu-collapser {
 		margin: 0 auto;
 	}
-	ul.slimmenu.collapsed {
-		width: 300px;
-		margin: 20px 10px 0 auto;
-	}
-	ul.slimmenu li>ul {
-		left: 0;
-	}
-	blockquote.leftside,
-	blockquote.rightside {
-		visibility: hidden;
-		display: none;
-	}
-	.contentBox2a,
-	.contentBox2b,
-	.contentBox3a,
-	.contentBox3b,
-	.contentBox3c {
-		width: 98%;
-		margin: 1%;
-		padding: 0;
-	}
-	.contentBox4a,
-	.contentBox4b,
-	.contentBox4c,
-	.contentBox4d {
-		width: 48%;
-		margin: 1%;
-		padding: 0;
-	}
-	.sidebarLeft,
-	.sidebarRight {
-		width: 98%;
-		margin: 1%;
-		padding: 0;
-	}
-	.contentRight,
-	.contentLeft {
-		width: 98%;
-		margin: 1%;
-		padding: 0;
-	}
 }
 
 
 /* ===== MID DEVICE 02 ======= */
 
-@media screen and (min-width: 670px) and (max-width: 768px) {
-	.container {
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
+@media (max-width: 768px) {
 	.photoblockcontainer {
 		width: 98%;
 		margin: -160px auto 10px auto;
-	}
-	.logo {
-		width: 40%;
-	}
-	.brand {
-		font-size: 30px;
-	}
-	nav {
-		width: 100%;
-	}
-	.menu-collapser {
-		width: 300px;
-		margin: 0 0 0 auto;
-	}
-	ul.slimmenu.collapsed {
-		width: 300px;
-		margin: 20px 10px 0 auto;
-	}
-	ul.slimmenu li>ul {
-		left: 0;
-	}
-	blockquote.leftside,
-	blockquote.rightside {
-		visibility: hidden;
-		display: none;
-	}
-	.contentBox3a,
-	.contentBox3b,
-	.contentBox3c {
-		width: 98%;
-		margin: 1%;
-		padding: 0;
-	}
-	.contentBox4a,
-	.contentBox4b,
-	.contentBox4c,
-	.contentBox4d {
-		width: 48%;
-		margin: 1%;
-		padding: 0;
-	}
-	.sidebarLeft,
-	.sidebarRight {
-		width: 98%;
-		margin: 1%;
-		padding: 0;
-	}
-	.contentRight,
-	.contentLeft {
-		width: 98%;
-		margin: 1%;
-		padding: 0;
 	}
 }
 
 
 /* ===== MID DEVICE 03 ======= */
 
-@media screen and (min-width: 769px) and (max-width: 800px) {
+@media (max-width: 800px) {
+	h2 {
+		font-size: 26px;
+	}
 	.container {
-		margin: 0 auto;
 		box-sizing: border-box;
 	}
-	.photoblockcontainer {
-		width: 98%;
+	.inside {
+		width: 90%;
 	}
 	.logo {
 		width: 40%;
@@ -2366,16 +2087,8 @@ ul#ticker {
 	nav {
 		width: 100%;
 	}
-	.menu-collapser {
-		width: 300px;
-		margin: 0 0 0 auto;
-	}
 	ul.slimmenu.collapsed {
-		width: 300px;
-		margin: 20px 10px 0 auto;
-	}
-	ul.slimmenu li>ul {
-		left: 0;
+		margin: 70px 20px 0 auto;
 	}
 	blockquote.leftside,
 	blockquote.rightside {
@@ -2393,8 +2106,8 @@ ul#ticker {
 	.contentBox4b,
 	.contentBox4c,
 	.contentBox4d {
-		width: 48%;
-		margin: 1%;
+		width: 100%;
+		margin: 20px 1%;
 		padding: 0;
 	}
 	.sidebarLeft,
@@ -2414,15 +2127,11 @@ ul#ticker {
 
 /* ===== LARGE DEVICE 01 ===== */
 
-@media screen and (min-width: 801px) and (max-width: 1024px) {
-	.container {
-		margin: 0 auto;
-	}
-	.photoblockcontainer {
-		width: 98%;
+@media (max-width: 1024px) {
+	header {
+		padding: 20px 0;
 	}
 	.menu-collapser {
-		width: 300px;
 		margin: 0 0 0 auto;
 		padding: 0;
 	}
@@ -2438,7 +2147,7 @@ ul#ticker {
 
 /* ===== LARGE DEVICE 02 ===== */
 
-@media screen and (min-width: 1025px) and (max-width: 1279px) {
+@media (max-width: 1279px) {
 	.container {
 		margin: 0 auto;
 	}
@@ -2455,8 +2164,54 @@ ul#ticker {
 	padding-top: 10px;
 }
 
-.campaign {
+.campaignimg-caption {
 	font-weight: bold;
+}
+
+.page-caption {
+	font-size: x-small;
+	line-height: 1.3;
+	margin: 20px 0 60px;
+}
+
+.warning-caption {
+	background: rgba(255, 0, 0, 0.2);
+	font-size: x-small;
+	line-height: 1.3;
+	text-align: center;
+	padding: 8px;
+}
+
+a.hover-border,
+.hover-class a {
+	position: relative;
+	color: rgb(233, 2, 2);
+	text-decoration: none;
+}
+
+a.hover-border:hover,
+.hover-class a:hover {
+	color: rgb(186, 1, 1);
+}
+
+a.hover-border::before,
+.hover-class a::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: -4px;
+	left: 0;
+	background-color: rgb(186, 1, 1);
+	visibility: hidden;
+	transform: scaleX(0);
+	transition: all 0.3s ease-in-out 0s;
+}
+
+a.hover-border:hover::before,
+.hover-class a:hover::before {
+	visibility: visible;
+	transform: scaleX(1);
 }
 
 @media (max-width: 1076px){
@@ -2478,5 +2233,18 @@ ul#ticker {
 	iframe {
 		width: 300px;
 		height: 200px;
+	}
+}
+
+@media (max-width: 800px){
+	ul.slimmenu.collapsed {
+		margin: 20px 20px 0 auto;
+	}
+}
+
+@media (max-width: 480px) {
+	ul.slimmenu.collapsed {
+		width: 300px;
+		margin: 49px 10px 0 auto;
 	}
 }
