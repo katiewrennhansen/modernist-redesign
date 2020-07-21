@@ -131,7 +131,6 @@ table {
 
 a {
 	color: rgb(233, 2, 2);
-	text-decoration: underline;
 	outline: none;
 	font-weight: bold;
 	transition: 200ms ease-in-out;
@@ -139,15 +138,43 @@ a {
 
 a:hover {
 	color: rgb(186, 1, 1);
-	text-decoration: underline;
 	font-weight: bold;
 	transition: 200ms ease-in-out;
+}
+
+/* add hover border to a */
+.hover-class a {
+	position: relative;
+	color: rgb(233, 2, 2);
+	text-decoration: none;
+}
+
+.hover-class a:hover {
+	color: rgb(186, 1, 1);
+}
+
+.hover-class a::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: -4px;
+	left: 0;
+	background-color: rgb(186, 1, 1);
+	visibility: hidden;
+	transform: scaleX(0);
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.hover-class a:hover::before {
+	visibility: visible;
+	transform: scaleX(1);
 }
 
 h1 {
 	font: 44px 'Oswald', helvetica, Helvetica, sans-serif;
 	color: #222;
-	margin: 0.3em 0;
+	margin: 0.8em 0;
 	text-transform: uppercase;
 	text-align: left;
 	font-weight: bold;
@@ -164,7 +191,7 @@ h2 {
 h3 {
 	font: 24px 'Oswald', helvetica, Helvetica, sans-serif;
 	color: #333333;
-	margin: 0.3em 0;
+	margin: 0.5em 0;
 	text-transform: uppercase;
 	font-weight: bold;
 }
@@ -173,17 +200,17 @@ h4 {
 	font: 24px 'Oswald', helvetica, Helvetica, sans-serif;
 	color: #333333;
 	margin: 0.3em 0;
-	position: relative;
-	text-align: left;
-	letter-spacing: 1px;
 	overflow: hidden;
+	font-weight: bold;
 }
 
 h5 {
-	font: 24px 'Oswald', helvetica, Helvetica, sans-serif;
+	font: 18px 'Oswald', helvetica, Helvetica, sans-serif;
 	color: #333333;
 	margin: 0.3em 0;
 	text-align: left;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
 h6 {
@@ -415,6 +442,11 @@ ul.list3 li ul {
 	font-size: 0.85em;
 }
 
+.extra-small {
+	font-size: x-small;
+	line-height: 1.3;
+}
+
 .wide {
 	letter-spacing: 3px;
 }
@@ -618,6 +650,11 @@ hr.noshow {
 	left: 0;
 	width: 100% !important;
 	height: 100% !important;
+}
+
+.team-container {
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .team {
@@ -855,7 +892,7 @@ hr.noshow {
 
 .pageTitle h1 {
 	text-align: center;
-	margin: 0;
+	margin: 20px 0 30px;
 	padding: 0;
 	font-size: 60px;
 }
@@ -1270,25 +1307,21 @@ ul.slimmenu.collapsed li ul li ul li a {
 	margin: 0 0 0 2%;
 }
 
-.contentBox3a {
-	float: left;
-	width: 31.33333%;
+.team-container .contentBox3a,
+.team-container .contentBox3b,
+.team-container .contentBox3c {
+	width: 31.33%;
 	padding: 0;
 	margin: 0 2% 5px 0;
 }
 
-.contentBox3b {
-	float: left;
-	width: 31.33333%;
-	padding: 0;
-	margin: 0 1% 5px 1%;
-}
-
+.contentBox3a,
+.contentBox3b,
 .contentBox3c {
 	float: left;
-	width: 31.33333%;
+	width: 31.33%;
 	padding: 0;
-	margin: 0 0 5px 2%;
+	margin: 0 2% 5px 0;
 }
 
 .contentBox4a {
@@ -1379,62 +1412,14 @@ ul.slimmenu.collapsed li ul li ul li a {
 
 footer {
 	width: 100%;
-	color: #222;
-	font-size: 0.90em;
+	color: #333;
 	line-height: 1.4em;
 	padding: 10px 0 0 0;
 	margin: 50px auto 0;
 }
 
 footer a {
-	color: rgb(233, 2, 2);
 	margin: 0 6px 0 0;
-}
-
-footer a:hover {
-	color: rgb(186, 1, 1);
-}
-
-footer ul {
-	list-style-type: none;
-	line-height: normal;
-	position: relative;
-	margin: 0 0 10px 0;
-	padding: 0;
-}
-
-footer ul li {
-	list-style-type: none;
-	position: relative;
-	margin: 0 20px 0 0;
-	padding: 4px 0 2px 15px;
-}
-
-footer ul li:before {
-	position: absolute;
-	font-family: 'FontAwesome';
-	color: #7b88c5;
-	top: 6px;
-	left: 0;
-	content: "\f101";
-}
-
-footer ul li a {
-	color: #515151;
-	text-decoration: none;
-	font-weight: bold;
-	letter-spacing: 2px;
-}
-
-footer ul li a:hover {
-	color: #7b88c5;
-}
-
-footer h5 {
-	color: #222;
-	font: 18px 'Oswald', helvetica, Helvetica, sans-serif;
-	text-transform: uppercase;
-	font-weight: bold;
 }
 
 footer .inside {
@@ -1443,30 +1428,11 @@ footer .inside {
 	font-size: 12px;
 }
 
-footer .comment:before,
-footer .home:before,
-footer .hours:before,
-footer .email:before,
-footer .phone:before {
-	color: #555;
-}
-
 .footerbottom {
 	background: #000;
 	margin-top: 30px;
 	padding: 40px 60px;
 	color: #fff;
-}
-
-.footerbottom h1 {
-	font: 30px 'Poiret One', helvetica, Helvetica, sans-serif;
-	text-align: center;
-	color: #333;
-	margin: 0;
-	padding: 0;
-}
-
-.footerbottom span {
 	font-size: 10px;
 }
 
@@ -1474,44 +1440,12 @@ footer .phone:before {
 	width: 80px;
 	height: 80px;
 	margin: 0 30px 0 0;
-	border-radius: 50%;
 }
 
 .guidestar {
 	float: left;
-	height: 50px;
+	height: 80px;
 	margin: -20px 0 0;
-}
-
-.copyright {
-	letter-spacing: 3px;
-	text-align: center;
-	color: #444;
-	font-size: 0.85em;
-	margin: 0;
-	padding: 0;
-}
-
-.designed {
-	color: #888 !important;
-	text-align: center;
-	letter-spacing: 1px;
-	font-size: 10px;
-	font-size: 0.75em;
-	margin: 0;
-	padding: 15px 0 0 0;
-}
-
-.designed a {
-	color: #888 !important;
-	font-weight: normal;
-	text-decoration: none;
-}
-
-.designed a:hover {
-	color: #888 !important;
-	font-weight: normal;
-	text-decoration: underline;
 }
 
 
@@ -2106,10 +2040,16 @@ ul#ticker {
 		visibility: hidden;
 		display: none;
 	}
+	.team-container .contentBox3a,
+	.team-container .contentBox3b,
+	.team-container .contentBox3c {
+		width: 48%;
+		margin: 1%;
+	}
 	.contentBox3a,
 	.contentBox3b,
 	.contentBox3c {
-		width: 98%;
+		width: 48%;
 		margin: 1%;
 		padding: 0;
 	}
@@ -2175,58 +2115,30 @@ ul#ticker {
 	padding-top: 10px;
 }
 
-.campaignimg-caption {
-	font-weight: bold;
+.group.mission,
+.center iframe {
+	padding-top: 60px;
+}
+
+.about-us p.left {
+	padding: 30px 0;
 }
 
 .logo-subtext.extra-space {
 	margin-top: -20px;
 }
 
-.page-caption {
-	font-size: x-small;
-	line-height: 1.3;
+.home-text {
 	margin: 20px 0 60px;
+}
+
+.bitcoin-address {
+	color: rgb(71, 74, 84);
 }
 
 .warning-caption {
 	background: rgba(255, 0, 0, 0.2);
-	font-size: x-small;
-	line-height: 1.3;
-	text-align: center;
 	padding: 8px;
-}
-
-a.hover-border,
-.hover-class a {
-	position: relative;
-	color: rgb(233, 2, 2);
-	text-decoration: none;
-}
-
-a.hover-border:hover,
-.hover-class a:hover {
-	color: rgb(186, 1, 1);
-}
-
-a.hover-border::before,
-.hover-class a::before {
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 2px;
-	bottom: -4px;
-	left: 0;
-	background-color: rgb(186, 1, 1);
-	visibility: hidden;
-	transform: scaleX(0);
-	transition: all 0.3s ease-in-out 0s;
-}
-
-a.hover-border:hover::before,
-.hover-class a:hover::before {
-	visibility: visible;
-	transform: scaleX(1);
 }
 
 @media (max-width: 1076px){
@@ -2248,6 +2160,14 @@ a.hover-border:hover::before,
 	iframe {
 		width: 300px;
 		height: 200px;
+	}
+	.contentBox3a,
+	.contentBox3b,
+	.contentBox3c,
+	.team-container .contentBox3a,
+	.team-container .contentBox3b,
+	.team-container .contentBox3c  {
+		width: 98%;
 	}
 }
 
