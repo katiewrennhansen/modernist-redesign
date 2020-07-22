@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
 /* Design by RTBWizards.com
  * Colors Used: rgb(233, 2, 2) (dark), #7b88c5 (medium), #ced4ea (light)
  *
@@ -43,13 +45,14 @@ aside {
 
 body {
 	background: #ffffff;
-	font-family: 'Open Sans', helvetica, Helvetica, sans-serif;
+	font-family: Roboto, sans-serif;
 	font-size: 1.0em;
 	color: #000000;
 	margin: 0;
 	padding: 0;
 	line-height: 1.5em;
 	height: 100%;
+	font-weight: 300;
 }
 
 blockquote {
@@ -114,7 +117,7 @@ fieldset {
 
 legend {
 	color: rgb(233, 2, 2);
-	font: 30px 'Oswald', helvetica, Helvetica, sans-serif;
+	font: 30px 'Roboto', Helvetica, sans-serif;
 	padding: 0 10px;
 }
 
@@ -177,54 +180,54 @@ a.hover-link:hover::before,
 }
 
 h1 {
-	font: 44px 'Oswald', helvetica, Helvetica, sans-serif;
+	font: 44px Roboto, sans-serif;
 	color: #222;
 	margin: 0.8em 0;
-	text-transform: uppercase;
 	text-align: left;
-	font-weight: bold;
+	letter-spacing: -0.7px;
+	font-weight: 400;
 }
 
 h2 {
-	font: 36px 'Oswald', helvetica, Helvetica, sans-serif;
+	font: 44px Roboto, sans-serif;
 	color: #222;
 	margin: 20px 0;
-	text-transform: uppercase;
-	font-weight: bold;
+	letter-spacing: -0.7px;
+	font-weight: 500;
 }
 
 h3 {
-	font: 24px 'Oswald', helvetica, Helvetica, sans-serif;
+	font: 30px Roboto, sans-serif;
 	color: #333333;
 	margin: 0.5em 0;
-	text-transform: uppercase;
-	font-weight: bold;
+	letter-spacing: -0.7px;
+	font-weight: 500;
 }
 
 h4 {
-	font: 24px 'Oswald', helvetica, Helvetica, sans-serif;
+	font: 24px Roboto, sans-serif;
 	color: #333333;
 	margin: 0.3em 0;
 	overflow: hidden;
-	font-weight: bold;
+	letter-spacing: -0.7px;
+	font-weight: 500;
 }
 
 h5 {
-	font: 18px 'Oswald', helvetica, Helvetica, sans-serif;
+	font: 22px Roboto, sans-serif;
 	color: #333333;
 	margin: 0.3em 0;
 	text-align: left;
-	text-transform: uppercase;
-	font-weight: bold;
+	letter-spacing: -0.7px;
+	font-weight: 500;
 }
 
 h6 {
-	font: 18px 'Oswald', helvetica, Helvetica, sans-serif;
+	font: 18px Roboto, sans-serif;
 	color: #333333;
 	margin: 0.3em 0;
 	letter-spacing: 1px;
 	text-align: left;
-	text-transform: uppercase;
 	border-bottom: 1px solid #333333;
 }
 
@@ -233,7 +236,7 @@ hr {
 }
 
 .alternate1 {
-	font: 32px 'Oswald', helvetica, Helvetica, sans-serif;
+	font: 32px Helvetica, sans-serif;
 	color: rgb(233, 2, 2);
 	margin: 0.3em 0;
 	text-align: center;
@@ -264,7 +267,7 @@ hr {
 }
 
 .alternate2 {
-	font: 26px 'Oswald', helvetica, Helvetica, sans-serif;
+	font: 26px Helvetica, sans-serif;
 	color: #333333;
 	margin: 0.3em 0;
 	padding: 1px 0 0 0;
@@ -677,11 +680,10 @@ hr.noshow {
 }
 
 .team p.name {
-	text-transform: uppercase;
-	letter-spacing: 1px;
 	padding: 10px 0 0;
-	font-family: 'Oswald', sans-serif;
+	font-family: Roboto, sans-serif;
 	position: relative;
+	font-weight: 500;
 }
 
 .team p.name::before {
@@ -886,7 +888,7 @@ hr.noshow {
 	width: 100%;
 	text-align: center;
 	color: #000000;
-	font: 30px 'Oswald', helvetica, Helvetica, sans-serif;
+	font: 30px Roboto, Helvetica, sans-serif;
 	text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.4);
 }
 
@@ -975,14 +977,13 @@ header.homepage {
 /* 13. ======== MAIN NAVIGATION AREA ======== */
 
 nav {
-	margin-right: 2%;
+	margin-right: 35px;
 	padding: 5px 0 0 0;
 	list-style: none;
 	text-align: right;
 	height: 48px;
 	color: #fff;
 	box-sizing: border-box;
-	text-transform: uppercase;
 }
 
 /* === NON-MOBILE TOP LEVEL === */
@@ -1157,7 +1158,7 @@ ul.slimmenu li>ul>li ul {
 
 ul.slimmenu li a {
 	display: block;
-	font-family: 'Open Sans', sans-serif;
+	font-family: Roboto, Helvetica, sans-serif;
 	transition: background-color 0.2s ease-out;
 }
 
@@ -1493,7 +1494,7 @@ form.contactform {
 	margin: 10px 0 20px 0;
 	cursor: pointer;
 	color: #444;
-	font: 16px 'Oswald', helvetica, Helvetica, sans-serif;
+	font: 16px Roboto, Helvetica, sans-serif;
 	font-weight: normal;
 	padding: 2px 18px;
 	text-decoration: none;
