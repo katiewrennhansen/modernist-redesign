@@ -1064,7 +1064,7 @@ ul.slimmenu.collapsed li a:hover {
 }
 
 ul.slimmenu.collapsed li .sub-collapser>i {
-	color: #ced4ea;
+	color: #fff;
 }
 
 
@@ -1235,9 +1235,10 @@ ul.slimmenu.collapsed li .sub-collapser {
 }
 
 ul.slimmenu.collapsed li .sub-collapser>i {
-	font-size: 18px;
+	font-size: 14px;
 	display: inline-block;
 	vertical-align: middle;
+	font-style: unset;
 }
 
 ul.slimmenu.collapsed li ul li ul {
@@ -2158,7 +2159,6 @@ ul#ticker {
 }
 
 .warning-caption {
-	background: rgba(255, 0, 0, 0.2);
 	padding: 8px;
 }
 
