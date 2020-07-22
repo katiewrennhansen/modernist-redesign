@@ -134,6 +134,7 @@ a {
 	outline: none;
 	font-weight: bold;
 	transition: 200ms ease-in-out;
+	text-decoration: none;
 }
 
 a:hover {
@@ -143,16 +144,19 @@ a:hover {
 }
 
 /* add hover border to a */
+a.hover-link,
 .hover-class a {
 	position: relative;
 	color: rgb(233, 2, 2);
 	text-decoration: none;
 }
 
+a.hover-link:hover,
 .hover-class a:hover {
 	color: rgb(186, 1, 1);
 }
 
+a.hover-link::before,
 .hover-class a::before {
 	content: "";
 	position: absolute;
@@ -166,6 +170,7 @@ a:hover {
 	transition: all 0.3s ease-in-out 0s;
 }
 
+a.hover-link:hover::before,
 .hover-class a:hover::before {
 	visibility: visible;
 	transform: scaleX(1);
@@ -2115,8 +2120,24 @@ ul#ticker {
 	padding-top: 10px;
 }
 
+.landing-img {
+	height: 75vh;
+	width: 100vw;
+	background-image: url('http://www.usmodernist.org/catalano-nologo.jpg');
+	background-repeat: no-repeat;
+	background-position: 50% 65%;
+	background-size: cover;
+	margin: -30px -12.5% 0;
+}
+.featured-in a img {
+	margin: 8px 20px;
+}
+#juicebox-container {
+	margin: 0 auto;
+}
+
 .group.mission,
-.center iframe {
+.about-us iframe {
 	padding-top: 60px;
 }
 
@@ -2174,6 +2195,9 @@ ul#ticker {
 @media (max-width: 800px){
 	ul.slimmenu.collapsed {
 		margin: 20px 20px 0 auto;
+	}
+	.landing-img {
+		margin: -30px -5.5% 0;
 	}
 }
 
