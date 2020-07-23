@@ -202,6 +202,7 @@ h3 {
 	margin: 0.5em 0;
 	letter-spacing: -0.7px;
 	font-weight: 500;
+	text-transform: capitalize;
 }
 
 h4 {
@@ -564,14 +565,6 @@ hr.noshow {
 	float: right;
 	padding: 0;
 	margin: 0;
-}
-
-.socialmedia {
-	letter-spacing: 4px;
-}
-
-.socialmedia a i {
-	font-size: 25px;
 }
 
 .dropcap {
@@ -1006,7 +999,7 @@ ul.slimmenu li a {
 	color: #fff;
 	font-size: 12px;
 	font-weight: normal;
-	padding: 12px 16px;
+	padding: 12px 20px;
 }
 
 ul.slimmenu li a:hover {
@@ -1426,13 +1419,21 @@ footer {
 }
 
 footer a {
-	margin: 0 6px 0 0;
+	margin: 0 12px 0 0;
 }
 
 footer .inside {
 	padding: 30px 0 0;
 	border-top: 2px solid #333;
 	font-size: 12px;
+}
+
+.footer-actions {
+	margin: 25px 0;
+}
+
+.socialmedia a i {
+	font-size: 25px;
 }
 
 .footerbottom {
