@@ -2167,6 +2167,46 @@ ul#ticker {
 	padding: 8px;
 }
 
+table.gsc-search-box {
+	margin: 20px 0;
+}
+
+.gsc-input {
+	margin: 0;
+}
+
+.gsc-control-cse {
+	padding: 1em 0 3em!important;
+}
+
+.gsc-search-button {
+	margin: 0 0 0 -1px!important;
+	height: 35px;
+	border-color: rgb(233, 2, 2)!important;
+	border-bottom-left-radius: 0px!important;
+	border-top-left-radius: 0px!important;
+	background-color: rgb(233, 2, 2)!important;
+	transition: 200ms linear;
+}
+
+.gsc-search-button:hover {
+	background-color: rgb(186, 1, 1)!important;
+	border-color: rgb(186, 1, 1)!important;
+	transition: 200ms linear;
+}
+
+.gsc-search-button:hover {
+	cursor: pointer;
+}
+
+.gsc-input {
+	padding: 0!important;
+}
+
+.gsc-thumbnail-inside {
+	color: rgb(233, 2, 2)!important;
+}
+
 @media (max-width: 1076px){
 	iframe {
 		width: 600px;
