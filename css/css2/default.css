@@ -2207,6 +2207,24 @@ table.gsc-search-box {
 	color: rgb(233, 2, 2)!important;
 }
 
+.episode-guide hr {
+	opacity: 1;
+	margin: 30px 0;
+	height: 1px;
+	color: #000;
+	background-color: #000;
+}
+
+.masters h4 {
+	padding-top: 30px;
+}
+
+.magazine-img {
+	float: left;
+	margin-right: 20px;
+	width: 333px;
+}
+
 @media (max-width: 1076px){
 	iframe {
 		width: 600px;
