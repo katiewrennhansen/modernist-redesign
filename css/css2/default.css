@@ -2135,9 +2135,11 @@ ul#ticker {
 	background-size: cover;
 	margin: -30px -12.5% 0;
 }
+
 .featured-in a img {
 	margin: 8px 20px;
 }
+
 #juicebox-container {
 	margin: 0 auto;
 }
@@ -2167,6 +2169,33 @@ ul#ticker {
 	padding: 8px;
 }
 
+.episode-guide hr{
+	opacity: 1;
+	margin: 30px 0;
+	height: 1px;
+	color: #000;
+	background-color: #000;
+}
+
+.masters h4 {
+	padding-top: 30px;
+}
+
+.magazine-img {
+	float: left;
+	margin-right: 20px;
+	width: 333px;
+}
+
+.sponsor img {
+	margin: 20px 20px 10px 0;
+}
+
+.sponsor section {
+	padding-top: 24px;
+}
+
+/* search box styles */
 table.gsc-search-box {
 	margin: 20px 0;
 }
@@ -2207,24 +2236,7 @@ table.gsc-search-box {
 	color: rgb(233, 2, 2)!important;
 }
 
-.episode-guide hr {
-	opacity: 1;
-	margin: 30px 0;
-	height: 1px;
-	color: #000;
-	background-color: #000;
-}
-
-.masters h4 {
-	padding-top: 30px;
-}
-
-.magazine-img {
-	float: left;
-	margin-right: 20px;
-	width: 333px;
-}
-
+/* media queries  */
 @media (max-width: 1076px){
 	iframe {
 		width: 600px;
