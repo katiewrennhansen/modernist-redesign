@@ -2192,6 +2192,10 @@ ul#ticker {
 	margin: 20px 20px 10px 0;
 }
 
+.media img {
+	margin: 0 20px 10px 0;
+}
+
 .sponsor section {
 	padding-top: 24px;
 }
