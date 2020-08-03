@@ -2127,6 +2127,19 @@ ul#ticker {
 	padding-top: 10px;
 }
 
+.donate-btn {
+	background-color: rgb(233, 2, 2);
+	transition: 200ms linear;
+	padding: 6px 15px!important;
+	margin: 0 5px;
+	border-radius: 1px;
+}
+
+.donate-btn:hover {
+	background-color: rgb(186, 1, 1)!important;
+	transition: 200ms linear;
+}
+
 .landing-img {
 	height: 75vh;
 	width: 100vw;
@@ -2285,12 +2298,31 @@ form.payment input[type="submit"]:hover {
 		height: 400px!important;
 	}
 }
+
+@media (max-width: 1024px){
+	.donate-btn {
+		padding: 12px 20px!important;
+		margin: 0;
+	}
+}
+
+
+@media (max-width: 800px){
+	ul.slimmenu.collapsed {
+		margin: 20px 20px 0 auto;
+	}
+	.landing-img {
+		margin: -30px -5.5% 0;
+	}
+}
+
 @media (max-width: 750px){
 	iframe {
 		width: 400px;
 		height: 250px;
 	}
 }
+
 @media (max-width: 500px){
 	iframe {
 		width: 300px;
@@ -2303,15 +2335,6 @@ form.payment input[type="submit"]:hover {
 	.team-container .contentBox3b,
 	.team-container .contentBox3c  {
 		width: 98%;
-	}
-}
-
-@media (max-width: 800px){
-	ul.slimmenu.collapsed {
-		margin: 20px 20px 0 auto;
-	}
-	.landing-img {
-		margin: -30px -5.5% 0;
 	}
 }
 
