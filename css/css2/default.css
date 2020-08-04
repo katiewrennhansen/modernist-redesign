@@ -133,7 +133,7 @@ table {
 /* 2. ============= TYPOGRAPHY ============ */
 
 a {
-	color: rgb(233, 2, 2);
+	color: #000;
 	outline: none;
 	font-weight: bold;
 	transition: 200ms ease-in-out;
@@ -141,7 +141,7 @@ a {
 }
 
 a:hover {
-	color: rgb(186, 1, 1);
+	color: #000;
 	font-weight: bold;
 	transition: 200ms ease-in-out;
 }
@@ -150,13 +150,13 @@ a:hover {
 a.hover-link,
 .hover-class a {
 	position: relative;
-	color: rgb(233, 2, 2);
+	color:#000;
 	text-decoration: none;
 }
 
 a.hover-link:hover,
 .hover-class a:hover {
-	color: rgb(186, 1, 1);
+	color: #000;
 }
 
 a.hover-link::before,
@@ -165,9 +165,9 @@ a.hover-link::before,
 	position: absolute;
 	width: 100%;
 	height: 2px;
-	bottom: -4px;
+	bottom: -2px;
 	left: 0;
-	background-color: rgb(186, 1, 1);
+	background-color: #000;
 	visibility: hidden;
 	transform: scaleX(0);
 	transition: all 0.3s ease-in-out 0s;
@@ -180,7 +180,7 @@ a.hover-link:hover::before,
 }
 
 h1 {
-	font: 44px Roboto, sans-serif;
+	font: 50px Roboto, sans-serif;
 	color: #222;
 	margin: 0.8em 0;
 	text-align: left;
@@ -189,7 +189,7 @@ h1 {
 }
 
 h2 {
-	font: 44px Roboto, sans-serif;
+	font: 34px Roboto, sans-serif;
 	color: #222;
 	margin: 20px 0;
 	letter-spacing: -0.7px;
@@ -199,7 +199,7 @@ h2 {
 h3 {
 	font: 30px Roboto, sans-serif;
 	color: #333333;
-	margin: 0.5em 0;
+	margin: 20px 0;
 	letter-spacing: -0.7px;
 	font-weight: 500;
 	text-transform: capitalize;
@@ -215,7 +215,7 @@ h4 {
 }
 
 h5 {
-	font: 22px Roboto, sans-serif;
+	font: 18px Roboto, sans-serif;
 	color: #333333;
 	margin: 0.3em 0;
 	text-align: left;
@@ -898,7 +898,7 @@ hr.noshow {
 	text-align: center;
 	margin: 20px 0 30px;
 	padding: 0;
-	font-size: 60px;
+	font-size: 55px;
 }
 
 
@@ -1424,12 +1424,42 @@ footer {
 
 footer a {
 	margin: 0 12px 0 0;
+	color: rgb(233, 2, 2);
 }
 
 footer .inside {
 	padding: 30px 0 0;
 	border-top: 2px solid #333;
 	font-size: 12px;
+}
+
+footer a.hover-link {
+	position: relative;
+	color: rgb(233, 2, 2);
+	text-decoration: none;
+}
+
+footer a:hover,
+footer a.hover-link:hover {
+	color: rgb(186, 1, 1);
+}
+
+footer a.hover-link::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: -4px;
+	left: 0;
+	background-color: rgb(186, 1, 1);
+	visibility: hidden;
+	transform: scaleX(0);
+	transition: all 0.3s ease-in-out 0s;
+}
+
+footer a.hover-link:hover::before {
+	visibility: visible;
+	transform: scaleX(1);
 }
 
 .footer-actions {
