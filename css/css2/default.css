@@ -1478,6 +1478,10 @@ footer a.hover-link:hover::before {
 	font-size: 10px;
 }
 
+.footerbottom a {
+	margin: 0;
+}
+
 .guidestar img {
 	width: 80px;
 	height: 80px;
