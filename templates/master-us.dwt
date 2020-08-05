@@ -112,8 +112,14 @@
 		</header>
 		<!-- ==== page title ==== -->
 		<main class="row1">
+			<div class="warning-caption extra-small center">
+				<p>Enjoy browsing, but unless otherwise noted, these houses are private property and closed to the public -- so don't go tromping around uninvited!
+					<br>
+					CTRL-F to Search Within Page
+				</p>
+			</div>
 			<div class="container pageTitle">
-				<div class="inside hover-class">
+				<div class="inside">
 				<!-- #BeginEditable "pagetitle" -->
 
 				<!-- #EndEditable -->
