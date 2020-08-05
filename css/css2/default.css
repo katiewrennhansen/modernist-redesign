@@ -2217,7 +2217,7 @@ ul#ticker {
 	padding: 8px;
 }
 
-.episode-guide hr{
+.episode-guide hr {
 	opacity: 1;
 	margin: 30px 0;
 	height: 1px;
@@ -2227,6 +2227,10 @@ ul#ticker {
 
 .masters h4 {
 	padding-top: 30px;
+}
+
+.memberships h4 {
+	padding: 30px 0;
 }
 
 .magazine-img {
@@ -2288,6 +2292,7 @@ table.gsc-search-box {
 	color: rgb(233, 2, 2)!important;
 }
 
+/* subscription form styles */
 form.payment {
 	margin: 10px 0;
 }
@@ -2318,10 +2323,6 @@ form.payment input[type="submit"]:hover {
 	transition: 200ms linear;
 }
 
-.memberships h4 {
-	padding: 30px 0;
-}
-
 /* media queries  */
 @media (max-width: 1076px){
 	iframe {
@@ -2339,7 +2340,6 @@ form.payment input[type="submit"]:hover {
 		margin: 0;
 	}
 }
-
 
 @media (max-width: 800px){
 	ul.slimmenu.collapsed {
