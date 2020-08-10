@@ -1,6 +1,10 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<!-- #BeginEditable "title" -->
+		<!-- #EndEditable -->
+		<!-- #BeginEditable "description" -->
+		<!-- #EndEditable -->
 		<title>USModernist</title>
 		<meta content="width=device-width, initial-scale=1.0" name="viewport">
 		<link href="https://www.usmodernist.org/css/css2/default.css" media="screen" rel="stylesheet" type="text/css">
@@ -9,8 +13,8 @@
 		<link href="https://www.usmodernist.org/images/lightbox/default.css" media="screen" rel="stylesheet" type="text/css">
 		<link rel="icon" href="https://www.usmodernist.org/redchair.jpg">
 		<meta name="robots" content="index, follow" />
-		<meta content="modern, modernist, modernism, art, architecture, design, architect, modernist, dwell, atomic ranch, george smart, usmodernist, radio, ncmh, nc modernist houses, north carolina modernist houses, Marcel Breuer, Helena Arahuete, Nathan Crowley, Charles Deaton, Joseph Eichler, Jim Evans, Richard Foster, Walter Gropius, Charles Gwathmey, Philip Johnson, Ray Kappe, Michelle Kaufmann, Pierre Koenig, Tom Kundig, John Lautner, Leo Marmol, Richard Meier, William Morgan, Richard Neutra, Ralph Rapson, Clifford Reid, Rocio Romero, Paul Rudolph, Eero Saarinen, Rudolf Schindler, Beverley Thorne, Frank Lloyd Wright, Takis Zenetos">
 		<script src="https://use.fontawesome.com/71e832d86a.js"></script>
+		<meta content="modern, modernist, modernism, art, architecture, design, architect, modernist, dwell, atomic ranch, george smart, usmodernist, radio, ncmh, nc modernist houses, north carolina modernist houses, Marcel Breuer, Helena Arahuete, Nathan Crowley, Charles Deaton, Joseph Eichler, Jim Evans, Richard Foster, Walter Gropius, Charles Gwathmey, Philip Johnson, Ray Kappe, Michelle Kaufmann, Pierre Koenig, Tom Kundig, John Lautner, Leo Marmol, Richard Meier, William Morgan, Richard Neutra, Ralph Rapson, Clifford Reid, Rocio Romero, Paul Rudolph, Eero Saarinen, Rudolf Schindler, Beverley Thorne, Frank Lloyd Wright, Takis Zenetos">
 
 		<!-- 
 		**************************
@@ -65,7 +69,7 @@
 							<img src="mod_icon.png" width="300" height="72">
 						</a>
 					</div>
-					<div class="logo-subtext">Architecture You Love</div>
+					<div class="logo-subtext extra-space">Architecture You Love</div>
 				</div>
 				<!-- ==== Main Navigation ==== -->
 				<nav>
@@ -119,7 +123,7 @@
 				</p>
 			</div>
 			<div class="container pageTitle">
-				<div class="inside">
+				<div class="inside hover-class">
 				<!-- #BeginEditable "pagetitle" -->
 
 				<!-- #EndEditable -->

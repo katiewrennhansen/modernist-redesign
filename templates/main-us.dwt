@@ -114,7 +114,7 @@
 		<!-- ==== page title ==== -->
 		<main class="row1">
 			<div class="container pageTitle">
-				<div class="inside">
+				<div class="inside hover-class">
 				<!-- #BeginEditable "pagetitle" -->
 				
 				<!-- #EndEditable -->
