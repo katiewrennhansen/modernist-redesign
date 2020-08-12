@@ -22,18 +22,18 @@ fetch("https://services.arcgis.com/h1HPF81YCOI467An/arcgis/rest/services/moderni
     .then(result => {
         const resultArray = result.features
         resultArray.map(house => populateHouses(house))
-        console.log(resultArray)
     })
     .catch(error => console.log('error', error));
 
 
 function populateHouses(house){
     const houseOption = document.createElement('div');
-    const houseLabel = document.createElement('p');
+    houseOption.classList.add('house-card')
+    const houseLabel = document.createElement('h4');
+    const houseDescription = createDescription(house)
     let images;
     if(house.attributes.image.includes(',')){
         images = house.attributes.image.split(',')
-        console.log(images)
     }
     if(images) {
         images.map(image => createImage(image, houseOption))
@@ -42,11 +42,29 @@ function populateHouses(house){
     }
     houseLabel.innerText = `${house.attributes.name}`;
     houseOption.appendChild(houseLabel)
+    houseOption.appendChild(houseDescription)
     mainContent.appendChild(houseOption)
+}
+
+function createDescription(house){
+    const houseDescription = document.createElement('p');
+    const houseDescription1 = document.createElement('span');
+    
+    houseDescription1.innerText = `${house.attributes.description} `;
+    houseDescription.appendChild(houseDescription1);
+
+    if(house.attributes.description2){
+        const houseDescription2 = document.createElement('span');
+        houseDescription2.innerText = `${house.attributes.description2}`;
+        houseDescription.appendChild(houseDescription2);
+    }
+   
+    return houseDescription;
 }
 
 function createImage(image, parent){
     const houseImage = document.createElement('img');
     houseImage.setAttribute('src', image)
+    houseImage.classList.add('architect-image')
     parent.appendChild(houseImage)
 }

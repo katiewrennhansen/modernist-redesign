@@ -1,4 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+
 #viewDiv {
-    width: 100vw;
     height: 600px;
+}
+
+#main_content {
+    padding: 30px 0;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.architect-image {
+    width: 600px;
+    display: block;
+    margin: 5px auto;
+}
+
+.house-card {
+    padding: 20px 0px 10px;
+    border-bottom: 1px solid black;
+}
+
+.map-search-box {
+    width: 275px; 
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1em;
+    padding: 10px 16px;
+    border: none;
+}
+
+.esri-popup__header-title {
+    color: white;
+}
+
+.esri-popup__header-title:hover {
+    background: black;
 }
