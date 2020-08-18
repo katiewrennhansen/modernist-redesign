@@ -8,7 +8,7 @@ var urlencoded = new URLSearchParams();
 urlencoded.append("f", "json");
 urlencoded.append("where", "Architect = 'John Lautner'");
 urlencoded.append("outSr", "4326");
-urlencoded.append("outFields", "OBJECTID,architect,address,description,description2,image,name,year");
+urlencoded.append("outFields", "OBJECTID,architect,address,description,image,name,year,builder,owner1,owner2,owner3,owner4,date_commissioned,photo_credits,square_feet");
 
 var requestOptions = {
   method: 'POST',
@@ -50,16 +50,22 @@ function populateHouses(house){
 
 function createDescription(house){
     const houseDescription = document.createElement('p');
-    const houseDescription1 = document.createElement('span');
-    if(house.attributes.description){
-        houseDescription1.innerText = `${house.attributes.description} `;
-        houseDescription.appendChild(houseDescription1);
-    }
-   
-    if(house.attributes.description2){
-        const houseDescription2 = document.createElement('span');
-        houseDescription2.innerText = `${house.attributes.description2}`;
-        houseDescription.appendChild(houseDescription2);
+    const { 
+        description, 
+        builder, 
+        date_commissioned,
+        engineer,
+        owner1,
+        owner2,
+        owner3,
+        owner4,
+        square_feet,
+        photo_credits
+    } = house.attributes
+    if(description){
+        houseDescription.innerText = `
+        ${description ? description : ''} ${builder ? `Built by ${builder}.` : ''} ${photo_credits ? photo_credits : ''}
+        `;
     }
    
     return houseDescription;
