@@ -38,3 +38,7 @@
 .esri-popup__header-title:hover {
     background: black;
 }
+
+.esri-feature-content {
+    padding-top: 16px;
+}
